@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<installer-gui-script minSpecVersion="1">
+    <title>openURL</title>
+    <options customize="never" require-scripts="false"/>
+    <domains enable_anywhere="false" enable_currentUserHome="false" enable_localSystem="true"/>
+    <options rootVolumeOnly="true"/>
+    <product id="com.example.openURL" version="1.0"/>
+    <choices-outline>
+        <line choice="openURL"/>
+    </choices-outline>
+    <choice id="openURL" title="openURL" description="Automatically open URLs based on WiFi network">
+        <pkg-ref id="com.example.openURL"/>
+    </choice>
+    <pkg-ref id="com.example.openURL" version="1.0" auth="Root">#openURL.pkg</pkg-ref>
+</installer-gui-script>
